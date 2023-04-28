@@ -44,12 +44,12 @@ def key_pressed():
     # when you press the space bar. Run the program to test it.
 
     # 10. Increment the x and y variables of the 2 eye variables by 5:
-    left_eye.x += 5
-
+    left_eye.x += -5
+    right_eye.x += -5
     
     # 11. Call the .draw() method for both eye variables.
-
-
+    left_eye.draw()
+    right_eye.draw()
 if __name__ == '__main__':
     window = turtle.Screen()
     
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     #    e. Drag and drop the image into this python package
     
     # 2. Call the set_background() function with your variable inside of the parenthesis
-    set_background("bigEyedCat2.gif")
+    set_background("cat.gif")
 
     # 3. Make a new turtle
     bob = turtle.Turtle()
@@ -81,8 +81,8 @@ if __name__ == '__main__':
     
     # 8. After you've found the x and y for the eyes create 2 eye variables
     #    and initialize them:
-    left_eye  = Eye(eye=bob, x=-48, y=68, radius=30)
-    right_eye = Eye(eye=bob, x=46, y=73, radius=30)
+    left_eye  = Eye(eye=bob, x=-8, y=109, radius=15)
+    right_eye = Eye(eye=bob, x=43, y=100, radius=15)
 
     # 9. Call the .draw() method on BOTH eye variables
     left_eye.draw()
